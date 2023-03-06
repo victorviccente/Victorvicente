@@ -97,7 +97,7 @@ img {
 /* NAVBAR */
 .navbar {
 
-    background-color: rgba(120, 43, 43, 0.548);
+    background-color: rgb(120, 43, 43);
     box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
 
 }
