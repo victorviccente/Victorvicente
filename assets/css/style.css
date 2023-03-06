@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins&display=swap');
+
+
+
+:root {
+    --color-heading: #fff;
+    --color-base: white;
+    --color-base2: #f6ebeb;
+    --color-brand: rgb(255, 255, 255);
+    --color-brand2: #0f0f0f;
+    --button-bg: #391e2d;
+    --sidbar-width: 210px;
+    --font-base: "Poppins";
+}
+
+body {
+    font: var(--font-base);
+    background: fixed;
+    background-image: url(../images/backgroundfull.jpg);
+    background-position: 100%;
+    font-family: Poppins, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6, p {
+    color: var(--color-heading);
+    font-weight: 700;
+}
+
+.text-h1{
+    color: rgb(255, 255, 255);
+}
+
+.text-h1:hover{
+    color: #391e2d;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: white;
+}
+
+
+img {
+    width: 100%;
+}
+
+.text-brand {
+    color: burlywood;
+}
+
+.sub{
+    color: #eb9480;
+}
+
+.bg-base {
+    border-style: solid;
+    cursor: pointer;
+    border-color: white;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+.full-height {
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.shadow-effect {
+    transition: all 0.5s;
+}
+
+.shadow-effect:hover {
+    box-shadow: -6px 6px 0 0 white;
+}
+
+.iconbox {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    background-color: white;
+    color: black;
+}
+
+/* NAVBAR */
+.navbar {
+
+    background-color: rgba(120, 43, 43, 0.548);
+    box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+
+}
+
+.navbar .nav-link {
+    font-weight: 800;
+    color: #efeaea;
+      
+}
+
+.navbar .nav-link:hover {
+    color: #391e2d;
+}
+
+.navbar .nav-link.active {
+    color: #391e2d;
+}
+
+@media (min-width: 992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--sidbar-width);    
+        background-size: cover;
+        background-position: center;
+    }
+
+    .navbar-brand img {
+        border: none;
+    }
+
+    /* CONTENT WRAPPER */
+    #content-wrapper {
+        padding-left: var(--sidbar-width);
+    }
+}
+
+/* BUTTON */
+.btn {
+    padding: 18px;
+    font-weight: 700;
+}
+
+.btn-brand {
+    background-color: rgb(255, 230, 230);
+    border-color: #391e2d;
+    color: #000000;
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+    background-color: var(--button-bg);
+    color: var(--color-base);
+    border-color: white;
+    transform: scale(1.1);
+    transition: all 0.7s;
+}
+
+.link-custom {
+    font-weight: 700;
+    position: relative;
+}
+
+.link-custom::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color-brand);   
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.contact {
+    font-weight: 700;
+    position: relative;
+}
+
+.contact::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all 0.4s;
+}
+
+.contact:hover::after {
+    width: 100%;
+}
+
+.link-custom:hover::after {
+    width: 100%;
+}
+
+/* CARD */
+.card-custom .card-custom-image {
+    overflow: hidden;
+}
+
+.card-custom .card-custom-image img {
+    transition: all 0.4s ease;
+}
+
+.card-custom:hover .card-custom-image img {
+    transform: scale(1.1);
+}
+
+
+
+/* SOCIAL ICONS */
+.social-icons :hover{
+    color: #391e2d;
+    transform: scale(1.1);
+    transition: all 0.4s;
+    
+
+}
+
+.social-icons a {
+    color: rgb(251, 251, 251);
+    width: 60px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color:;
+    border-radius: 5px;
+    font-size: 40px;
+}
+
+.col-auto{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+
+
+
+
+
